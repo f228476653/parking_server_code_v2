@@ -1,0 +1,145 @@
+
+CREATE TABLE `parking_ftp_info` (
+  `parking_no` varchar(10) NOT NULL default ' ',
+  `parking_name` varchar(40) NOT NULL default ' ',
+  `ftp_ip` varchar(23) default ' ',
+  `ftp_port` varchar(4) default '21',
+  `ftp_userid` varchar(12) default ' ',
+  `ftp_pwd` varchar(12) default ' ',
+  `isActive` tinyint(3) NOT NULL default '0' COMMENT '0:啟用 1:停用',
+  PRIMARY KEY  (`parking_no`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+-- 
+-- 列出以下資料庫的數據： `parking_ftp_info`
+-- 
+
+INSERT INTO `parking_ftp_info` VALUES ('081', '瑞二', '192.168.41.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('323', '汐科', '192.168.198.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('247', '大世界', '192.168.185.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('229', '阿曼TIT場', '192.168.173.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('084', '衡陽', '192.168.96.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('275', '日月潭中興', '192.168.33.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('132', '里昂', '192.168.91.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('357', '台中福星', '10.1.24.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('359', '昌隆', '10.1.26.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('349', '永科停一', '192.168.209.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('350', '永科停三', '192.168.210.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('351', '永科停四', '192.168.211.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('352', '永科停五', '192.168.212.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('353', '永科停六', '192.168.213.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('354', '永科停七', '192.168.214.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('355', '永科停八', '192.168.215.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('356', '桃園高明', '10.1.23.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('360', '台中文心', '10.1.27.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('361', '台南小北商場', '192.168.153.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('363', '力行', '172.16.21.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('321', '麗林', '192.168.196.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('341', '文化三', '10.1.22.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('347', '民視', '192.168.208.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('020', '克強', '192.168.135.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('034', '中興', '192.168.71.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('039', '安東', '192.168.62.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('079', '建國', '192.168.74.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('120', '成功', '192.168.54.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('151', '文德', '192.168.63.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('171', '文成', '192.168.63.210', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('254', '石潭', '192.168.192.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('296', '山仔頂', '192.168.164.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('210', '醒吾', '192.168.151.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('259', '宜蘭礁溪', '192.168.42.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('261', '光華商場', '192.168.82.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('082', '南京場', '192.168.55.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('346', '南門場', '192.168.53.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('031', '大千場', '192.168.57.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('324', '天祥場', '192.168.199.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('145', '行天宮場', '192.168.109.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('083', '前瞻場', '192.168.56.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('158', '博仁醫院場', '192.168.113.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('262', '士林官邸', '192.168.59.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('056', '統領', '192.168.75.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('272', '士商', '192.168.77.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('271', '桃園頂好', '192.168.99.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('234', '文湖', '192.168.170.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('246', '長慶', '192.168.184.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('255', '松山慈惠堂', '192.168.193.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('290', '宜蘭健康', '192.168.128.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('245', '頭份信東', '192.168.183.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('116', '大湳', '192.168.84.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('220', '中壢仁海宮', '192.168.161.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('115', '中壢長春', '192.168.51.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('301', '中壢新街', '192.168.107.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('243', '中壢環中', '192.168.182.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('207', '延平', '192.168.148.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('237', '桃園大有', '192.168.176.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('242', '桃園同安', '192.168.181.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('114', '桃園國際', '192.168.52.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('203', '桃園復興', '192.168.142.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('342', '桃園晶宴', '192.168.44.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('117', '龍潭', '192.168.86.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('252', '龜山', '192.168.190.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('131', '介壽', '192.168.89.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('133', '三峽', '192.168.92.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('330', '北大', '192.168.203.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('269', '土城中一', '192.168.98.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('250', '秀山', '192.168.188.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('052', '永一', '192.168.35.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('336', '汐止福德', '192.168.197.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('263', '四川路', '192.168.61.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('284', '府中', '192.168.121.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('316', '長江', '192.168.162.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('325', '華江', '192.168.115.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('307', '林口', '192.168.126.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('311', '淡大', '192.168.110.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('111', '淡水', '192.168.49.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('256', '關渡', '192.168.194.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('159', '安康', '192.168.114.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('195', '中莊', '192.168.132.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('218', '中華', '192.168.159.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('197', '中誠', '192.168.134.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('327', '榮華', '192.168.200.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('178', '頭前', '192.168.129.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('113', '重陽', '192.168.95.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('304', '台中清泉崗', '192.168.40.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('308', '第一廣場 ', '192.168.60.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('287', '台中昌平', '192.168.125.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('294', '台中逢甲', '192.168.156.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('235', '台中福雅', '192.168.174.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('278', '台灣大道', '192.168.117.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('198', '台中大忠', '192.168.139.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('344', '台中大益', '192.168.46.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('276', '台中五權三', '192.168.102.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('238', '台中大昌', '192.168.177.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('282', '台中大新', '192.168.45.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('348', '台中潭子', '192.168.133.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('295', '台南樹林', '192.168.81.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('326', '台南永康', '192.168.68.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('317', '台南安中', '192.168.130.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('216', '台南忠義', '192.168.157.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('309', '台南小東', '192.168.90.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('303', '台南東一', '192.168.94.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('302', '台南東和', '192.168.31.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('319', '台南莊敬', '192.168.141.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('297', '台南富農', '192.168.166.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('286', '台南裕農', '192.168.123.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('265', '埔里忠孝', '192.168.58.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('233', '埔里', '192.168.171.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('257', '南投草屯', '192.168.37.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('168', '高雄大順', '192.168.124.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('331', '高雄鼎義', '192.168.83.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('318', '高雄澄清', '192.168.140.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('312', '高雄寶三', '192.168.111.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('315', '高雄頂豐', '192.168.120.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('298', '台中綠園道', '192.168.144.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('313', '嘉義嘉南', '192.168.112.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('314', '嘉義嘉東', '192.168.118.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('340', '員林員生', '192.168.205.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('232', '員林華成', '192.168.169.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('285', '員榮', '192.168.122.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('240', '彰化永樂', '192.168.179.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('369', '臥龍', '10.1.30.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('268', '東方巨人', '192.168.85.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('291', '新竹公道五', '192.168.143.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('367', '新台五', '192.168.178.200', '21', 'transfer', 'transfer', 1);
+INSERT INTO `parking_ftp_info` VALUES ('370', '南投竹山', '10.1.31.200', '21', 'transfer', 'transfer', 0);
+INSERT INTO `parking_ftp_info` VALUES ('371', '高雄岡山', '10.1.32.200', '21', 'transfer', 'transfer', 0);

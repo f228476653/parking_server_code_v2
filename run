@@ -1,0 +1,60 @@
+#!/bin/sh
+PORT=8901
+FOLDER="doc"
+if [ "$1" == "pad-demo" ] 
+then
+    sudo /usr/bin/nohup /usr/local/bin/python3 /home/ec2-user/servers/pmsplus-server-pad-demo/main.py --env=pad-demo --port=8001> server-demo.log 2>&1 &
+elif [ "$1" == "pad-release" ] 
+then
+    port=8901
+    FOLDER="pad-release"
+    #sudo /usr/bin/nohup /usr/local/bin/python3 /home/pmsplus/servers/pad-release/main.py --env=pad-release --port=8901> server.log 2>&1 &
+elif [ "$1" == "qa" ] 
+then
+    sudo /usr/bin/nohup /usr/local/bin/python3 /home/ec2-user/servers/qa/main.py --env=qa --port=8902> server.log 2>&1 &
+elif [ "$1" == "pad-devel" ] 
+then
+    PORT=8000
+    FOLDER="pmsplus-server-pad-devel"
+    sudo /usr/bin/nohup /usr/local/bin/python3 /home/pms_plus/pmsplus_pad_devel/main.py --env=pad-devel --port=8002> server_pad.log 2>&1 &
+
+elif [ "$1" == "test" ] 
+then
+    sudo /usr/bin/nohup /usr/local/bin/python3 /home/ec2-user/servers/pmsplus-server-test/main.py --env=pad-devel --port=8000> server.log 2>&1 &
+elif [ "$1" == "doc" ] 
+then
+    PORT=8902
+    FOLDER="doc"
+elif [ "$1" == "prod" ]
+then
+    PORT=8901
+    FOLDER="prod"
+else
+    python3 main.py
+fi
+
+if [ "$2" == "k" ]
+then
+   echo "kill server $1"
+else
+   echo "running server $1"
+fi
+
+if [ "$2" == "k" ]
+then
+        ps -ef | grep "$PORT" |grep -v grep | awk '{print $2}'
+	PID=`ps -ef | grep "$PORT" |grep -v grep | awk '{print$2}' | awk 'FNR == 2'`
+	echo killing PID = "$PID"
+        if [ -n "$PID" ]; then
+		kill `ps -ef | grep "$PORT" |grep -v grep | awk '{print$2}' | awk 'FNR == 2'`
+        	echo " -----checking server current process -----"
+        	sleep 2
+        	ps -ef | grep $PORT
+	else
+		echo "server is not running"
+	fi
+else
+    echo "/usr/bin/nohup /usr/local/bin/python3 /home/pmsplus/servers/$FOLDER/main.py --env=$FOLDER --port=$PORT> server.log 2>&1 &
+fi"
+    /usr/bin/nohup /usr/local/bin/python3 /home/pmsplus/servers/$FOLDER/main.py --env=$FOLDER --port=$PORT> server.log 2>&1 &
+fi
